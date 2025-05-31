@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gen X</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+ <body class="m-0 p-0 box-border bg-slate-100 text-gray-800">
+
+  <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
+  <div class="container mx-auto flex items-center justify-between h-[75px] px-4">
+      <div class="flex items-center gap-2">
+        <!-- A lil Easter egg-->
+        <img id="axolotlGif" src="assets/dance.gif" alt="Dancing Axolotl"
+          class="h-10 hidden transition-opacity duration-500" />
+        <h1 class="text-2xl font-bold">Generations</h1>
+      </div>
+      <audio id="audio" src="assets/bg.mp3" autoplay loop></audio>
+      <nav>
+        <ul class="flex gap-6 text-white font-medium font-semibold">
+          <li><a href="#about-us" class="hover:text-blue-600">About</a></li>
+          <li><a href="#marine-life" class="hover:text-blue-600">Gen X</a></li>
+          <li><a href="#faqs" class="hover:text-blue-600">FAQs</a></li>
+          <li><a href="#submit" class="hover:text-blue-600">Submit</a></li> 
+          <li><button onclick="toggleAudio()" id="music">🔊</button></li>  
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-[url('assets/bg.gif')] bg-cover bg-center h-[350px] w-full"> 
+    <div class="container mx-auto flex items-start justify-start h-full">
+      <div id="about-us" class="p-6 bg-black bg-opacity-60 rounded-lg mt-10 ml-4 sm:ml-20 max-w-3xl">
+        <h2 class="text-white text-2xl font-bold">About Gen X</h2>
+        <p class="text-white mt-4">
+          Generation X (Gen X) refers to the demographic cohort of people born between the mid-1960s and the early 1980s, typically considered to be between 1965 and 1980. This generation follows the Baby Boomers and precedes the Millennials (Generation Y). 
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="marine-life" class="py-16 bg-slate-800 text-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-10 text-center">feamous Gen X</h2>
+
+      
+      <div class="flex flex-row gap-6 overflow-x-auto pb-4">
+
+        <div class="min-w-[250px] bg-gray-400 border border-blue-200 rounded-lg shadow-sm text-sm">
+          <img class="rounded-t-lg h-32 w-full object-cover" src="assets/1.jpg" alt="Elon musk" />
+          <div class="p-4 text-gray-800">
+            <h5 class="mb-1 text-lg font-semibold">Elon musk</h5>
+            <p>CEO of Tesla, SpaceX, and Twitter (now X).</p>
+          </div>
+        </div>
+
+        <div class="min-w-[250px] bg-gray-500 border border-green-200 rounded-lg shadow-sm text-sm">
+          <img class="rounded-t-lg h-32 w-full object-cover" src="assets/2.jpg" alt="Jeff Bezos" />
+          <div class="p-4 text-gray-800">
+            <h5 class="mb-1 text-lg font-semibold">Jeff Bezos</h5>
+            <p>Founder of Amazon.</p>
+          </div>
+        </div>
+
+        <div class="min-w-[250px] bg-gray-500 border border-blue-300 rounded-lg shadow-sm text-sm">
+          <img class="rounded-t-lg h-32 w-full object-cover" src="assets/4.jpg" alt="Bill Gates" />
+          <div class="p-4 text-gray-800">
+            <h5 class="mb-1 text-lg font-semibold">Bill Gates</h5>
+            <p>Co-founded Microsoft and made personal computing mainstream</p>
+          </div>
+        </div>
+
+        <div class="min-w-[250px] bg-gray-300 border border-yellow-200 rounded-lg shadow-sm text-sm">
+          <img class="rounded-t-lg h-32 w-full object-cover" src="assets/3.jpg" alt="Satya Nadella" />
+          <div class="p-4 text-gray-800">
+            <h5 class="mb-1 text-lg font-semibold">Satya Nadella</h5>
+            <p> Microsoft CEO, pushing tech for good</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="faqs" class="bg-gray-950 text-gray-100 py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="mb-12 text-4xl font-bold text-center">Frequently Asked Questions</h2>
+      <div class="flex flex-col divide-y divide-gray-700 max-w-4xl mx-auto">
+
+        <details>
+          <summary class="py-3 cursor-pointer font-medium hover:underline">Who is this site for?</summary>
+          <div class="px-4 pb-4">For anyone curious about Gen X, really.</div>
+        </details>
+
+        <details>
+          <summary class="py-3 cursor-pointer font-medium hover:underline">what is the worst Gen ever</summary>
+          <div class="px-4 pb-4">from my opion gen alpha 😂</div>
+        </details>
+
+        <details>
+          <summary class="py-3 cursor-pointer font-medium hover:underline">Do the creatures on the site dance when I scroll?</summary>
+          <div class="px-4 pb-4">Not exactly, but scroll down and you’ll spot something fun.</div>
+        </details>
+
+       
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="submit" class="bg-slate-950 py-16 text-white">
+    <div class="container mx-auto px-4 max-w-2xl">
+      <h2 class="text-3xl font-bold text-center mb-8">Submit Your Favorite Marine Life</h2>
+      <form action="mailto:ayatmicrosoft@gmail.com" method="POST" enctype="text/plain"
+        class="space-y-6 bg-gray-950 p-6 rounded-lg shadow text-slate-900">
+        <div>
+          <label for="name" class="block text-sm font-medium mb-1 text-white">Your Name</label>
+          <input type="text" id="name" name="name" required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium mb-1 text-white">Your Email</label>
+          <input type="email" id="email" name="email" required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+        <div>
+          <label for="creature" class="block text-sm font-medium mb-1 text-white">Favorite Marine Life</label>
+          <textarea id="creature" name="creature" rows="4" required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+        <button type="submit"
+          class="bg-gray-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-gray-700 transition">Submit</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer class="bg-slate-900 text-white py-6">
+    <div class="container mx-auto text-center px-4">
+      <p>&copy; 2025 Generations. All rights resrved.</p>
+    </div>
+  </footer>
+
+  <script>
+
+  const gif = document.getElementById("axolotlGif");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 10) {
+      gif.classList.remove("hidden");
+      gif.classList.add("opacity-100");
+    } else {
+      gif.classList.add("hidden");
+      gif.classList.remove("opacity-100");
+    }
+  });
+
+  // bg music logic
+  function toggleAudio() {
+    const audio = document.getElementById("audio");
+    const button = document.getElementById("music");
+
+    if (audio.paused) {
+      audio.play();
+      button.textContent = '⏸️'; // will show when audio is playing to 'Pause Audio'
+    } else {
+      audio.pause();
+      button.textContent = '🔊'; //  will show when audio is paused to 'Play Audio'
+    }
+  }
+</script>
+
+</body>
+
+</html>
